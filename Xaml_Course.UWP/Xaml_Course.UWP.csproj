@@ -135,7 +135,7 @@
     <Content Include="footsteps.png" />
     <Content Include="heart.png" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="standing-human-body-silhouette.png" />
+    <Content Include="standinghumanbodysilhouette.png" />
     <Content Include="stopwatch.png" />
     <Content Include="stress.png" />
   </ItemGroup>
@@ -159,6 +159,12 @@
       <Project>{508B6801-32B9-45C6-AA15-C7C0C1C88EDF}</Project>
       <Name>Xaml_Course</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\GOTHIC.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\comic.ttf" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

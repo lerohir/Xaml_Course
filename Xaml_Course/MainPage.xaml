@@ -25,7 +25,7 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
                     <!-- Bloc ou on trouve la vitesse / temps / allure -->
-                    <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="Gray"  Padding ="8,5,0,20" Margin="10,10,10,0" CornerRadius="10">
+                    <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="Gray"  Padding ="8,5,0,15" Margin="10,10,10,0" CornerRadius="10">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="20" />

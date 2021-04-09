@@ -5,6 +5,12 @@
     <Application.Resources>
         <Style TargetType="Label">
             <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontFamily">
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="UWP" Value="\Assets\gothic.ttf#gothic"/>
+                    <On Platform="Android" Value="GOTHIC.TTF#gothic"/>
+                </OnPlatform>
+            </Setter>
         </Style>
 
     </Application.Resources>
