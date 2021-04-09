@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xaml_Course.MainPage">
+
+    <StackLayout BackgroundColor ="Black">
+        <Frame BackgroundColor ="Gray" Margin="20,100,20,100" CornerRadius="10" Padding="0" >
+            <Grid  BackgroundColor="#FF303030" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <!--Hier-->
+                <Label Text="Hier" Grid.Column="0" Grid.Row="0" HorizontalTextAlignment="Start" Padding="13,7,0,0" BackgroundColor="Gray"/>
+                <!-- partie affichage sans hier (black)-->
+                <Grid  Grid.Column="0" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!-- Bloc ou on trouve la vitesse / temps / allure -->
+                    <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="Gray"  Padding ="8,5,0,20" Margin="10,10,10,0" CornerRadius="10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="20" />
+                            </Grid.RowDefinitions>
+                            <Image Grid.Column="0" Grid.Row="0" Source="footsteps.png"></Image>
+                            <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"  Text="Ostricourt - 50EF" Margin="0,0,0,0"></Label>
+                            <Label Grid.Row="1" Grid.Column="2" Padding="0,0,0,0" Text="Temps" HorizontalTextAlignment="Center"></Label>
+                            <Label Grid.Row="1" Grid.Column="3" Text="Allure" HorizontalTextAlignment="Center"></Label>
+                            <Label Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Text="7,00 KM"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="30"></Label>
+                            <Label Grid.Row="2" Grid.Column="2" Text="48:58" HorizontalTextAlignment="Center"></Label>
+                            <Label Grid.Row="2" Grid.Column="3" Text="7:00" HorizontalTextAlignment="Center"></Label>
+                        </Grid>
+                    </Frame>
+                    <!-- Bloc ou on trouve le reste -->
+                    <StackLayout Grid.Column="0" Grid.Row="1" BackgroundColor="#FF303030" Padding="10,10,10,10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                                <RowDefinition Height="40" />
+                            </Grid.RowDefinitions>
+                            <!-- FreqCardiaque -->
+                            <Image Grid.Row="0" Grid.Column="0" Source="heart.png" HorizontalOptions="Start" ></Image>
+                            <Label  Grid.Row="0" Grid.Column="1" Text="Fréq Cardiaque" VerticalTextAlignment="Center"></Label>
+                            <Label  Grid.Row="0" Grid.Column="2" Text="56re." VerticalTextAlignment="Center"></Label>
+                            <Label  Grid.Row="0" Grid.Column="2" Text="176 +h.." HorizontalTextAlignment="End" VerticalTextAlignment="Center"></Label>
+                            <!-- Body Battery -->
+                            <Image Grid.Row="1" Grid.Column="0" Source="standinghumanbodysilhouette.png" HorizontalOptions="Start"></Image>
+                            <Label Grid.Row="1" Grid.Column="1" Text="Body Battery" VerticalTextAlignment="Center" ></Label>
+                            <Label Grid.Row="1" Grid.Column="2" Text="+22 / -25" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                            <!-- Niveau de stress -->
+                            <Image Grid.Row="2" Grid.Column="0" Source="stress.png" HorizontalOptions="Start"></Image>
+                            <Label Grid.Row="2" Grid.Column="1" Text="Niveau de stress" VerticalTextAlignment="Center"></Label>
+                            <Label Grid.Row="2" Grid.Column="2" Text="21" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                            <!-- Mn intensives -->
+                            <Image Grid.Row="3" Grid.Column="0" Source="stopwatch.png" HorizontalOptions="Start"></Image>
+                            <Label Grid.Row="3" Grid.Column="1" Text="Mn Intensives" VerticalTextAlignment="Center"></Label>
+                            <Label Grid.Row="3" Grid.Column="2" Text="116 TOTAL QUOTIDIEN" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                            <!-- Pas -->
+                            <Image Grid.Row="4" Grid.Column="0" Source="footsteps.png" HorizontalOptions="Start"></Image>
+                            <Label Grid.Row="4" Grid.Column="1" Text="Pas" VerticalTextAlignment="Center" ></Label>
+                            <Label Grid.Row="4" Grid.Column="2" Text="9673" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                            <!-- Calories -->
+                            <Image Grid.Row="5" Grid.Column="0" Source="calories.png" HorizontalOptions="Start"></Image>
+                            <Label Grid.Row="5" Grid.Column="1" Text="Calories" VerticalTextAlignment="Center" ></Label>
+                            <Label Grid.Row="5" Grid.Column="2" Text="2836" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>
